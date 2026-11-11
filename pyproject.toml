@@ -1,0 +1,13 @@
+[project]
+name = "g1-footstep"
+version = "0.0.1"
+description = "Goal-conditioned point-to-point stepping RL for the Unitree G1 (mjlab + RSL-RL, joint-position action)"
+requires-python = ">=3.10"
+dependencies = ["mjlab==1.2.0", "mujoco-warp==3.5.0", "mujoco==3.5.0", "scipy"]   # mujoco 4.x breaks mujoco-warp 3.5; mjlab brings rsl-rl-lib, torch, tyro
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["embodiments*"]

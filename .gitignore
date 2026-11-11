@@ -1,0 +1,13 @@
+# environments (see README: 설치)
+.venv/
+.venv_isaaclab/
+__pycache__/
+*.egg-info/
+# training output, logging services
+logs/
+wandb/
+outputs/
+# Isaac Sim USD downloaded by scripts/fetch_assets.py (NVIDIA assets, not redistributed)
+assets/isaac/
+# local install / run logs
+/*.log
